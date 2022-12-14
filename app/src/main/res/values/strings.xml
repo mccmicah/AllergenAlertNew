@@ -9,7 +9,8 @@
     <string name="allergy5">Choice 5</string>
     <string name="allergy6">Choice 6</string>
     <string name="allergy7">Choice 7</string>
-    <string name="live">You\'ll Live</string>
+    <string name="submit_button">Submit Allergies</string>
+    <string name="live">You\'ll live</string>
     <string name="die">You will die</string>
 
 </resources>

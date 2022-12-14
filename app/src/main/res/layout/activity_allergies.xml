@@ -6,10 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".Allergies">
 
-    <TextView
-        android:id="@+id/results"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="The results are..." />
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textFontWeight="18"/>
+        <CheckBox android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allergy1" />
+        <CheckBox android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allergy2" />
+        <CheckBox android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allergy3" />
+        <CheckBox android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allergy4" />
+        <CheckBox android:id="@+id/option5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allergy5" />
+        <CheckBox android:id="@+id/option6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allergy6" />
+        <CheckBox android:id="@+id/option7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allergy7" />
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button" />
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

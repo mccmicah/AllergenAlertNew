@@ -112,7 +112,7 @@ public class CheckPhoto extends AppCompatActivity {
                     // Task completed successfully
                     // ...
                     String resultString = visionText.getText();
-                    Toast.makeText(getApplicationContext(), resultString, Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), resultString, Toast.LENGTH_LONG).show();
                     Context context = getApplicationContext();
                     Intent intent = new Intent(context, Allergies.class);
                     intent.putExtra("words", resultString);
@@ -132,6 +132,6 @@ public class CheckPhoto extends AppCompatActivity {
 
         }
 
-        Toast.makeText(getApplicationContext(),"The end.", Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(),"The end.", Toast.LENGTH_SHORT).show();
     }
 }
