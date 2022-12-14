@@ -30,11 +30,16 @@ public class Allergies extends AppCompatActivity {
         ArrayList<String> nutFamily = new ArrayList<String>(Arrays.asList("peanuts", "treenuts", "almonds", "walnuts"));
         ArrayList<String> meatFamily = new ArrayList<String>(Arrays.asList("beef", "chicken", "pork", "turkey"));
         ArrayList<String> seaFamily = new ArrayList<String>(Arrays.asList("crab", "lobster", "salmon", "shellfish"));
+        ArrayList<String> wheatFamily = new ArrayList<String>(Arrays.asList("wheat", "gluten"));
+        ArrayList<String> dairyFamily = new ArrayList<String>(Arrays.asList("butter", "milk", "cream"));
+
 
         Map<String, List<String>> keywords = new HashMap<String, List<String>>();
         keywords.put("nuts", nutFamily);
         keywords.put("meat", meatFamily);
         keywords.put("seafood", seaFamily);
+        keywords.put("wheat", wheatFamily);
+        keywords.put("dairy", dairyFamily);
 
         String words = (String)getIntent().getStringExtra("words");
         words.toLowerCase();
@@ -67,6 +72,10 @@ public class Allergies extends AppCompatActivity {
                     allTerms.addAll(keywords.get("meat"));
                 } if(option3.isChecked()) {
                     allTerms.addAll(keywords.get("seafood"));
+                } if (option4.isChecked()) {
+                    allTerms.addAll(keywords.get("wheat"));
+                } if (option5.isChecked()) {
+                    allTerms.addAll(keywords.get("dairy"));
                 }
 
                 Set<String> allergySet = new HashSet<String>(allTerms);
