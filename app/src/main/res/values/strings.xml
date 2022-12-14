@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Allergen Alert</string>
+    <string name="upload">Upload Photo</string>
+    <string name="title">Choose your allergies:</string>
+    <string name="allergy1">Choice 1</string>
+    <string name="allergy2">Choice 2</string>
+    <string name="allergy3">Choice 3</string>
+    <string name="allergy4">Choice 4</string>
+    <string name="allergy5">Choice 5</string>
+    <string name="allergy6">Choice 6</string>
+    <string name="allergy7">Choice 7</string>
+    <string name="live">You\'ll Live</string>
+    <string name="die">You will die</string>
+
+</resources>
